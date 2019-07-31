@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'card', loadChildren: './pages/card/card.module#CardPageModule' },
   { path: 'checkbox', loadChildren: './pages/checkbox/checkbox.module#CheckboxPageModule' },
   { path: 'date-time', loadChildren: './pages/date-time/date-time.module#DateTimePageModule' },
+  { path: 'fab', loadChildren: './pages/fab/fab.module#FabPageModule' },
 ];
 
 @NgModule({

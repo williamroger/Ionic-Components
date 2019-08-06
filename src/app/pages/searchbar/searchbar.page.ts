@@ -9,17 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class SearchbarPage implements OnInit {
 
   albums: any[] = [];
+  textoBuscar = '';
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getAlbums().subscribe((albun) => {
-      console.log(albun);
-      this.albums = albun;
+    this.dataService.getAlbums().subscribe((album) => {
+      this.albums = album;
     });
   }
 
   buscar(event) {
-    console.log(event);
+    this.textoBuscar = event.detail.value;
   }
 }

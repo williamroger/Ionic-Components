@@ -1,3 +1,4 @@
+import { PipesModule } from './pipes/pipes.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -19,6 +20,7 @@ import { ComponentsModule } from './components/components.module';
     IonicModule.forRoot(),
     AppRoutingModule,
     ComponentsModule,
+    PipesModule,
     HttpClientModule
   ],
   providers: [
